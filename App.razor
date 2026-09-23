@@ -1,0 +1,15 @@
+<div class="app">
+    <h1>DesktopApp</h1>
+    <p>.NET 10 + PhotinoX + Blazor is running.</p>
+    <button @onclick="Increment">
+        Clicked @count times
+    </button>
+</div>
+
+@code {
+    private int count;
+
+    private void Increment() {
+        count++;
+    }
+}

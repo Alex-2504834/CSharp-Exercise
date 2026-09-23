@@ -1,0 +1,20 @@
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: system-ui, sans-serif;
+    background: #111318;
+    color: #f5f5f5;
+}
+
+.app {
+    padding: 3rem;
+}
+
+button {
+    padding: 0.75rem 1.25rem;
+    border: 0;
+    border-radius: 0.6rem;
+    font: inherit;
+    cursor: pointer;
+}

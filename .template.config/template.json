@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Template Author",
+  "classifications": [
+    "Desktop",
+    "Blazor",
+    "PhotinoX",
+    "Cross-platform"
+  ],
+  "identity": "PhotinoX.Blazor.DotNet10.Template",
+  "name": "PhotinoX Blazor Desktop (.NET 10)",
+  "shortName": "photinox-blazor",
+  "sourceName": "DesktopApp",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
