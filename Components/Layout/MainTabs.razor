@@ -1,0 +1,31 @@
+<div class="app-shell">
+    <nav class="main-tabs" aria-label="Main tabs">
+        @for (var i = 0; i < MainTabNames.Length; i++) {
+            var index = i;
+
+            <button class="tab-button @(ActiveMainTab == index ? "active" : "")"@onclick="() => SelectMainTab(index)">
+                @MainTabNames[index]
+            </button>
+        }
+    </nav>
+
+    <main class="page-content">
+        <h1>@MainTabNames[ActiveMainTab]</h1>
+        <nav class="sub-tabs" aria-label="Sub tabs">
+            @for (var i = 0; i < SubTabNames[ActiveMainTab].Length; i++) {
+                var index = i;
+
+                <button class="sub-tab-button @(ActiveSubTabs[ActiveMainTab] == index ? "active" : "")"
+                        @onclick="() => SelectSubTab(index)">
+                    @SubTabNames[ActiveMainTab][index]
+                </button>
+            }
+        </nav>
+
+        <section class="tab-content">
+            <DynamicComponent Type="@ActiveComponentType" />
+        </section>
+
+    </main>
+
+</div>
