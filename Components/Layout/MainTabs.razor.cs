@@ -17,6 +17,7 @@ public partial class MainTabs
 
     protected string[][] SubTabNames { get; } =
         [
+         ["Tab 1A", "Tab 1B", "Tab 1C"],
          ["Tab 2A", "Tab 2B", "Tab 2C"],
          ["Tab 3A", "Tab 3B", "Tab 3C"],
          ["Tab 4A", "Tab 4B", "Tab 4C"]
